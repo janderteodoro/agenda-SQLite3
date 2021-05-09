@@ -23,7 +23,7 @@ class AgendaBD:
     def listing(self):
         self.cursor.execute('SELECT * FROM agenda') 
         for line in self.cursor.fetchall():
-            print('linha') 
+            print(line) 
 
     def close(self):
         self.cursor.close() 

@@ -7,7 +7,7 @@ class AgendaBD:
         self.cursor= self.comunication.cursor() 
 
     def inserir(self, name, tel):
-        query = 'INSERT OR IGNORE INTO agenda (ame, tel) VALUE (?, ?)'
+        query = 'INSERT OR IGNORE INTO agenda (name, tel) VALUE (?, ?)'
         self.cursor.execute(query, (name, tel))
         self.comunication.commit() 
 
